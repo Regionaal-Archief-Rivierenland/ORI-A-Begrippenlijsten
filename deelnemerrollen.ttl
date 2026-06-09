@@ -1,0 +1,67 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rol: <https://ori-a.nl/begrippenlijsten#deelnemerrollen-> .
+
+<https://ori-a.nl/begrippenlijsten#deelnemerrollen> a skos:ConceptScheme ;
+    dcterms:title "Deelnemerrollen"@nl ;
+    dcterms:description "Rollen waarin in een deelnemer aan een vergadering aanwezig in kan zijn."@nl ;
+    skos:hasTopConcept rol:voorzitter, rol:vicevoorzitter, rol:griffier, rol:raadslid,
+        rol:statenlid, rol:kamerlid, rol:dagelijks, rol:algemeen, rol:inspreker .
+
+rol:voorzitter a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "De voorzitter van de vergadering."@nl ;
+    skos:prefLabel "Voorzitter"@nl .
+
+rol:vicevoorzitter a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "De vice-voorzitter van de vergadering."@nl;
+    skos:prefLabel "Vice-voorzitter"@nl .
+
+rol:portefeuillehouder a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "Ambtenaar die de verantwoordelijkheid draagt over een besproken onderwerp."@nl;
+    skos:prefLabel "Portefeuillehouder"@nl .
+
+rol:griffier a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "Hoofd van de griffie."@nl;
+    skos:prefLabel "Griffier"@nl .
+
+rol:raadslid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "Gekozen volksvertegenwoordiger binnen een gemeente."@nl;
+    skos:prefLabel "Raadslid"@nl .
+
+rol:statenlid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "Gekozen volksvertegenwoordiger binnen een provincie."@nl;
+    skos:prefLabel "Statenlid"@nl .
+
+rol:kamerlid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "Gekozen volksvertegenwoordiger binnen de Eerste of Tweede Kamer."@nl;
+    skos:prefLabel "Kamerlid"@nl .
+
+rol:dagelijksbestuurslid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "Lid van een dagelijks bestuur."@nl;
+    skos:prefLabel "Dagelijks bestuurslid"@nl .
+
+rol:algemeenbestuurslid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "Lid van een algemeen bestuur."@nl;
+    skos:prefLabel "Algemeen bestuurslid"@nl .
+
+rol:inspreker a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    skos:definition "Niet-lid dat inspreekt tijdens de vergadering."@nl;
+    skos:prefLabel "Inspreker"@nl .
+
+# todo: maybe add a `replacedBy`, and then link the most generic term
+# (linking to generic concepts is also a good way of mapping ORI and ORI-A in general)
+rol:overig a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#deelnemerrollen> ;
+    owl:deprecated true ;
+    dcterms:description "Slechts aanwezig tbv compatibiliteit met het oorspronkelijke ORI informatiemodel; gebruik van deze rol wordt afgeraden." ;
+    skos:prefLabel "Overig"@nl .
