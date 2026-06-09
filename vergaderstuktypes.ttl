@@ -10,17 +10,17 @@
         vergaderstuktype:ingekomenstuk, vergaderstuktype:mededeling .
 
 vergaderstuktype:vergaderstuk a skos:Concept; # meest algemene/breed concept; wordt nog niks mee gedaan
-    # skos:topConceptOf vergaderstuktype:vergaderstuktypes ;
+    # skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
     skos:definition "Document dat een rol speelt op of ten behoeve van een vergadering."@nl;
     skos:prefLabel "Vergaderstuk"@nl .
     
 vergaderstuktype:voorstel a skos:Concept ;
-    skos:topConceptOf vergaderstuktype:vergaderstuktypes ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
     skos:prefLabel "Voorstel"@nl ;
     skos:definition "Plan waarover een besluit genomen kan worden."@nl .
 
 vergaderstuktype:motie a skos:Concept ;
-    skos:topConceptOf vergaderstuktype:vergaderstuktypes ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
     skos:prefLabel "Motie"@nl ;
     skos:definition "Gemotiveerde verklaring waardoor een mening of verzoek wordt uitgesproken."@nl ;
     skos:narrower vergaderstuktype:motie-voorstel, vergaderstuktype:motie-wantrouwen, vergaderstuktype:motie-treurnis,
@@ -58,17 +58,17 @@ vergaderstuktype:motie-vreemd a skos:Concept ;
     skos:broader vergaderstuktype:motie .
 
 vergaderstuktype:amendement a skos:Concept ;
-    skos:topConceptOf vergaderstuktype:vergaderstuktypes ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
     skos:prefLabel "Amendement"@nl ;
     skos:definition "Voorstel om een bestaand voorstel te wijzigen."@nl .
 
 vergaderstuktype:toezegging a skos:Concept ;
-    skos:topConceptOf vergaderstuktype:vergaderstuktypes ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
     skos:prefLabel "Toezegging"@nl ;
     skos:definition "Toezegging van een gedeputeerde of raadslid."@nl .
 
 vergaderstuktype:vraag a skos:Concept ;
-    skos:topConceptOf vergaderstuktype:vergaderstuktypes ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
     skos:prefLabel "Vraag"@nl ;
     skos:definition "Vraag aan een overheidsorgaan.."@nl ;
     skos:narrower vergaderstuktype:vraag-technisch, vergaderstuktype:vraag-schriftelijk, vergaderstuktype:vraag-mondeling .
