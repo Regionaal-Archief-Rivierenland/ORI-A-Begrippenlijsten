@@ -15,8 +15,8 @@ mediabrontype:video a skos:Concept ;
 
 mediabrontype:audio a skos:Concept ;
     skos:topConceptOf <https://ori-a.nl/begrippenlijsten#mediabrontypes> ;
-    skos:definition "Een audiovisuele opname van een vergadering."@nl ;
-    skos:prefLabel "Een geluidsopname van een vergadering."@nl ;
+    skos:definition "Een geluidsopname van een vergadering."@nl ;
+    skos:prefLabel "Audio"@nl ;
     skos:altLabel "Audiotuul"@nl .
 
 mediabrontype:transcriptie a skos:Concept ;
