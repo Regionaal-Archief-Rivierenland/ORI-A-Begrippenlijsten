@@ -23,35 +23,34 @@ vergaderstuktype:motie a skos:Concept ;
     skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
     skos:prefLabel "Motie"@nl ;
     skos:definition "Gemotiveerde verklaring waardoor een mening of verzoek wordt uitgesproken."@nl ;
-    skos:narrower vergaderstuktype:motie-voorstel, vergaderstuktype:motie-wantrouwen, vergaderstuktype:motie-treurnis,
-                  vergaderstuktype:motie-afkeuring, vergaderstuktype:motie-vreemd .
+    skos:narrower vergaderstuktype:motieVoorstel, vergaderstuktype:motieWantrouwen, vergaderstuktype:motieTreurnis,
+                  vergaderstuktype:motieAfkeuring, vergaderstuktype:motieVreemd .
 
-vergaderstuktype:motie-voorstel a skos:Concept ;
+vergaderstuktype:motieVoorstel a skos:Concept ;
     skos:inScheme vergaderstuktype:vergaderstuktypes ;
     skos:prefLabel "Voorstel"@nl ;
-    skos:notation "Motie | Voorstel"@nl ; # should we add this everywhere?
     skos:definition "Motie met een voorstel tot handelen."@nl ;
     skos:broader vergaderstuktype:motie .
 
-vergaderstuktype:motie-wantrouwen a skos:Concept ;
+vergaderstuktype:motieWantrouwen a skos:Concept ;
     skos:inScheme vergaderstuktype:vergaderstuktypes ;
     skos:prefLabel "Wantrouwen"@nl ;
     skos:definition "Motie van wantrouwen."@nl ;
     skos:broader vergaderstuktype:motie .
 
-vergaderstuktype:motie-treurnis a skos:Concept ;
+vergaderstuktype:motieTreurnis a skos:Concept ;
     skos:inScheme vergaderstuktype:vergaderstuktypes ;
     skos:prefLabel "Treurnis"@nl ;
     skos:definition "Motie van treurnis."@nl ;
     skos:broader vergaderstuktype:motie .
 
-vergaderstuktype:motie-afkeuring a skos:Concept ;
+vergaderstuktype:motieAfkeuring a skos:Concept ;
     skos:inScheme vergaderstuktype:vergaderstuktypes ;
     skos:prefLabel "Afkeuring"@nl ;
     skos:definition "Motie van afkeuring."@nl ;
     skos:broader vergaderstuktype:motie .
 
-vergaderstuktype:motie-vreemd a skos:Concept ;
+vergaderstuktype:motieVreemd a skos:Concept ;
     skos:inScheme vergaderstuktype:vergaderstuktypes ;
     skos:prefLabel "Vreemd"@nl ;
     skos:definition "Motie over een onderwerp dat niet op de agenda staat."@nl ;
@@ -71,21 +70,21 @@ vergaderstuktype:vraag a skos:Concept ;
     skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
     skos:prefLabel "Vraag"@nl ;
     skos:definition "Vraag aan een overheidsorgaan.."@nl ;
-    skos:narrower vergaderstuktype:vraag-technisch, vergaderstuktype:vraag-schriftelijk, vergaderstuktype:vraag-mondeling .
+    skos:narrower vergaderstuktype:vraagTechnisch, vergaderstuktype:vraagSchriftelijk, vergaderstuktype:vraagMondeling .
     
-vergaderstuktype:vraag-technisch a skos:Concept ;
+vergaderstuktype:vraagTechnisch a skos:Concept ;
     skos:inScheme vergaderstuktype:vergaderstuktypes ;
     skos:prefLabel "Technische vraag"@nl ;
     skos:definition "Vraag naar feitelijke informatie."@nl ;
     skos:broader vergaderstuktype:vraag .
 
-vergaderstuktype:vraag-schriftelijk a skos:Concept ;
+vergaderstuktype:vraagSchriftelijk a skos:Concept ;
     skos:inScheme vergaderstuktype:vergaderstuktypes ;
     skos:prefLabel "Schriftelijke politieke vraag"@nl ;
     skos:definition "Schriftelijk ingediende vraag over een politiek standpunt."@nl ;
     skos:broader vergaderstuktype:vraag .
 
-vergaderstuktype:vraag-mondeling a skos:Concept ;
+vergaderstuktype:vraagMondeling a skos:Concept ;
     skos:inScheme vergaderstuktype:vergaderstuktypes ;
     skos:prefLabel "Mondelinge politieke vraag"@nl ;
     skos:definition "Mondelinge vraag over een politiek standpunt."@nl ;
