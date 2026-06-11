@@ -1,0 +1,116 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix functie: <https://ori-a.nl/begrippenlijsten#functies-> .
+
+<https://ori-a.nl/begrippenlijsten#functies> a skos:ConceptScheme ;
+    dcterms:title "Functies"@nl ;
+    dcterms:description "Begrippen om de functie of ambt van een persoon mee vast te leggen."@nl ;
+    skos:hasTopConcept functie:commissarisVanDeKoning, functie:burgemeester, functie:dijkgraaf, functie:statenlid,
+        functie:raadslid, functie:algemeenBestuurslid, functie:gedeputeerde, functie:wethouder, functie:heemraad,
+        functie:dagelijksBestuurslid, functie:griffier, functie:secretarisDirecteur, functie:provinciesecretaris,
+        functie:gemeentesecretaris, functie:commissielid, functie:commissielidBurgelid, functie:ambtenaarOfMedewerker,
+        functie:adviseurOfDeskundige, functie:overig .
+
+functie:commissarisVanDeKoning a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:altLabel "Commissaris van de Koningin"@nl ;
+    skos:altLabel "Gouverneur van Limburg"@nl ;
+    skos:prefLabel "Commissaris van de Koning"@nl ;
+    skos:definition "Voorzitter van het algemeen en dagelijks bestuur van een provincie."@nl .
+
+functie:burgemeester a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Burgemeester"@nl ;
+    skos:definition "Voorzitter van het algemeen en dagelijks bestuur van een gemeente."@nl .
+
+functie:dijkgraaf a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ; 
+    skos:altLabel "Watergraaf"@nl ;
+    skos:prefLabel "Dijkgraaf"@nl ;
+    skos:definition "Voorzitter van het algemeen en dagelijks bestuur van een waterschap."@nl .
+
+functie:statenlid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:definition "Lid van het algemeen bestuur van een provincie."@nl ;
+    skos:prefLabel "Statenlid"@nl .
+
+functie:raadslid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Raadslid"@nl ;
+    skos:definition "Lid van het algemeen bestuur van een gemeente."@nl .
+
+functie:algemeenBestuurslid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Algemeen bestuurslid"@nl ;
+    skos:definition "Lid van een algemeen bestuur."@nl .
+    
+functie:gedeputeerde a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Gedeputeerde"@nl ;
+    skos:definition "Lid van het dagelijks bestuur van een provincie."@nl .
+
+functie:wethouder a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Wethouder"@nl ;
+    skos:definition "Lid van het dagelijks bestuur van een gemeente."@nl .
+
+functie:heemraad a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:altLabel "Hoogheemraad"@nl ;
+    skos:prefLabel "Heemraad"@nl ;
+    skos:definition "Lid van het dagelijks bestuur van een waterschap."@nl .
+
+functie:dagelijksBestuurslid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Dagelijks bestuurslid"@nl ;
+    skos:definition "Lid van een dagelijks bestuur."@nl .
+
+functie:griffier a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Griffier"@nl ;
+    skos:definition "Secretaris van het algemeen bestuur van een gemeente of provincie."@nl .
+
+functie:secretarisDirecteur a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Secretaris-directeur"@nl ;
+    skos:definition "Secretaris van het algemeen en dagelijks bestuur van een waterschap."@nl .
+
+functie:provinciesecretaris a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Provinciesecretaris"@nl ;
+    skos:definition "Secretaris van het dagelijks bestuur van een provincie."@nl .
+
+functie:gemeentesecretaris a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Gemeentesecretaris"@nl ;
+    skos:definition "Secretaris van het dagelijks bestuur van een gemeente."@nl .
+
+functie:commissielid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Commissielid"@nl ;
+    skos:definition "Door het algemeen bestuur van een overheidsorgaan benoemd lid van een commissie of werkgroep."@nl ;
+    skos:narrower functie:commissielidBurgelid .
+
+functie:commissielidBurgelid a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Burgerlid"@nl ;
+    skos:definition "Een niet-verkozen lid van een commissie of werkgroep."@nl ;
+    skos:broader functie:commissielid .
+
+functie:ambtenaar a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Ambtenaar of medewerker"@nl ;
+    skos:definition "Een overheidsmedewerker."@nl .
+
+functie:adviseurOfDeskundige a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Adviseur of deskundige"@nl ;
+    skos:definition "Een door de overheid ingehuurde adviseur of deskundige."@nl .
+
+functie:overig a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Overig"@nl ;
+    owl:deprecated true ;
+    dcterms:description "Slechts aanwezig tbv compatibiliteit met het oorspronkelijke ORI informatiemodel; gebruik van deze functie wordt afgeraden." .
+    

@@ -1,0 +1,33 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dagelijksbestuurtype: <https://ori-a.nl/begrippenlijsten#dagelijks-bestuur-types-> .
+
+<https://ori-a.nl/begrippenlijsten#dagelijks-bestuur-types> a skos:ConceptScheme ;
+    dcterms:title "Dagelijks bestuur types"@nl ;
+    dcterms:description "Rollen waarin in een deelnemer aan een vergadering aanwezig in kan zijn."@nl ;
+    skos:hasTopConcept dagelijksbestuurtype:collegeVanDijkgraafEnHeemraden,
+        dagelijksbestuurtype:collegeVanGedeputeerdeStaten,
+        dagelijksbestuurtype:collegeVanBurgemeesterEnWethouders,
+        dagelijksbestuurtype:dagelijksBestuur .
+
+dagelijksbestuurtype:collegeVanBurgemeesterEnWethouders a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#dagelijks-bestuur-types> ;
+    skos:altLabel "College van B&W"@nl ;
+    skos:prefLabel "College van burgemeester en wethouders"@nl ;
+    skos:definition "Dagelijks bestuur van een gemeente."@nl .
+
+dagelijksbestuurtype:collegeVanGedeputeerdeStaten a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#dagelijks-bestuur-types> ;
+    skos:prefLabel "College van Gedeputeerde Staten"@nl ;
+    skos:definition "Dagelijks bestuur van een provincie."@nl .
+
+dagelijksbestuurtype:collegeVanDijkgraafEnHeemraden a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#dagelijks-bestuur-types> ;
+    skos:prefLabel "College van dijkgraaf en heemraden"@nl ;
+    skos:definition "Dagelijks bestuur van een waterschap. Ook van toepassing op hoogheemraden."@nl .
+
+# TODO: this one seems really generic; maybe make this the broadest concept?
+dagelijksbestuurtype:dagelijksBestuur a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#dagelijks-bestuur-types> ;
+    skos:prefLabel "Dagelijks bestuur"@nl ;
+    skos:definition "Dagelijks bestuur van een overheidsorgaan."@nl .

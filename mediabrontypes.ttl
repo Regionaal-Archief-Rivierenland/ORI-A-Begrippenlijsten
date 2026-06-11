@@ -1,0 +1,25 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mediabrontype: <https://ori-a.nl/begrippenlijsten#mediabrontypes-> .
+
+<https://ori-a.nl/begrippenlijsten#mediabrontypes> a skos:ConceptScheme ;
+    dcterms:title "Mediabrontypes"@nl ;
+    dcterms:description "Gangbare mediaformaten waarin vergaderingen worden vastgesteld."@nl ;
+    skos:hasTopConcept mediabrontype:video, mediabrontype:audio, mediabrontype:transcriptie .
+
+mediabrontype:video a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#mediabrontypes> ;
+    skos:definition "Een audiovisuele opname van een vergadering."@nl ;
+    skos:prefLabel "Video"@nl ;
+    skos:altLabel "Videotuul"@nl .
+
+mediabrontype:audio a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#mediabrontypes> ;
+    skos:definition "Een audiovisuele opname van een vergadering."@nl ;
+    skos:prefLabel "Een geluidsopname van een vergadering."@nl ;
+    skos:altLabel "Audiotuul"@nl .
+
+mediabrontype:transcriptie a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#mediabrontypes> ;
+    skos:definition "Een schriftelijke uitwerking van de gesproken inhoud van een vergadering."@nl ;
+    skos:prefLabel "Transcriptie"@nl .

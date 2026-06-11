@@ -1,0 +1,23 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix relatie: <https://ori-a.nl/begrippenlijsten#betrokkene-vergaderstuk-relaties-> .
+
+<https://ori-a.nl/begrippenlijsten#betrokkene-vergaderstuk-relaties> a skos:ConceptScheme ;
+    dcterms:title "Betrokkene-vergaderstuk relaties"@nl ;
+    dcterms:description "Relaties tussen een bij een vergadering betrokken persoon en een vergaderstuk."@nl ;
+    skos:hasTopConcept relatie:indiener, relatie:ondertekenaar, relatie:portefeuillehouder .
+
+relatie:indiener a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#betrokkene-vergaderstuk-relaties> ;
+    skos:prefLabel "Indiener"@nl ;
+    skos:definition "Indiener van een vergaderstuk."@nl .
+
+relatie:ondertekenaar a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#betrokkene-vergaderstuk-relaties> ;
+    skos:prefLabel "Ondertekenaar"@nl ;
+    skos:definition "Ondertekenaar van een vergaderstuk."@nl .
+
+relatie:portefeuillehouder a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#betrokkene-vergaderstuk-relaties> ;
+    skos:prefLabel "Portefeuillehouder"@nl ;
+    skos:definition "De portefeuillehouder van een voorstel."@nl .

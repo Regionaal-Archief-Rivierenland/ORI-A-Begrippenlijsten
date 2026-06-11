@@ -1,0 +1,48 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vergaderingstype: <https://ori-a.nl/begrippenlijsten#vergaderingstypes-> .
+
+<https://ori-a.nl/begrippenlijsten#vergaderingstypes> a skos:ConceptScheme ;
+    dcterms:title "Vergaderingstypes"@nl ;
+    dcterms:description "Soorten vergaderingen."@nl ;
+    skos:hasTopConcept vergaderingstype:raadsvergadering, vergaderingstype:commissievergadering,
+        vergaderingstype:collegevergadering,  vergaderingstype:statenvergadering,
+        vergaderingstype:algemeneBestuursvergadering, vergaderingstype:dagelijksBestuurvergadering,
+        vergaderingstype:presidium .
+
+vergaderingstype:raadsvergadering a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderingstypes> ;
+    skos:definition "Vergadering van een gemeenteraad."@nl ;
+    skos:prefLabel "Raadsvergadering"@nl .
+
+vergaderingstype:commissievergadering a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderingstypes> ;
+    skos:definition "Vergadering van een commissie."@nl ;
+    skos:prefLabel "Commissievergadering"@nl .
+
+vergaderingstype:collegevergadering a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderingstypes> ;
+    skos:definition "Vergadering van een college."@nl ;
+    skos:prefLabel "Collegevergadering"@nl .
+
+vergaderingstype:statenvergadering a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderingstypes> ;
+    skos:definition "Vergadering van Provinciale Staten."@nl ;
+    skos:prefLabel "Statenvergadering"@nl .
+
+vergaderingstype:algemeneBestuursvergadering a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderingstypes> ;
+    skos:definition "Vergadering van een algemeen bestuur."@nl ;
+    skos:altLabel "Algemeen bestuursvergadering"@nl ;
+    skos:prefLabel "Algemene bestuursvergadering"@nl .
+    
+
+vergaderingstype:dagelijksBestuurvergadering a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderingstypes> ;
+    skos:definition "Vergadering van een dagelijks bestuur."@nl ;
+    skos:prefLabel "Dagelijks bestuursvergadering"@nl .
+
+vergaderingstype:presidium a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderingstypes> ;
+    skos:definition "Vergadering van een presidium."@nl ;
+    skos:prefLabel "Presidium"@nl .
