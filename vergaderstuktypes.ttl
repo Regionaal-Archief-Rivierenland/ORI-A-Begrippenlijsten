@@ -69,7 +69,7 @@ vergaderstuktype:toezegging a skos:Concept ;
 vergaderstuktype:vraag a skos:Concept ;
     skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
     skos:prefLabel "Vraag"@nl ;
-    skos:definition "Vraag aan een overheidsorgaan.."@nl ;
+    skos:definition "Vraag aan een overheidsorgaan."@nl ;
     skos:narrower vergaderstuktype:vraagTechnisch, vergaderstuktype:vraagSchriftelijk, vergaderstuktype:vraagMondeling .
     
 vergaderstuktype:vraagTechnisch a skos:Concept ;
