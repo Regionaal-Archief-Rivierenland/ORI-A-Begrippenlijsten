@@ -104,3 +104,8 @@ vergaderstuktype:mededeling a skos:Concept ;
     skos:inScheme vergaderstuktype:vergaderstuktypes ;
     skos:prefLabel "Mededeling"@nl ;
     skos:definition "Een mededeling."@nl .
+
+vergaderstuktype:nota a skos:Concept ;
+    skos:inScheme vergaderstuktype:vergaderstuktypes ;
+    skos:prefLabel "Nota"@nl ;
+    skos:definition "Bericht ter kennisgeving."@nl .
