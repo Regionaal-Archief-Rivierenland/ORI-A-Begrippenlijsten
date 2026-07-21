@@ -9,10 +9,10 @@
         vergaderstuktype:toezegging, vergaderstuktype:vraag, vergaderstuktype:antwoord,
         vergaderstuktype:ingekomenstuk, vergaderstuktype:mededeling .
 
-vergaderstuktype:vergaderstuk a skos:Concept; # meest algemene/breed concept; wordt nog niks mee gedaan
-    # skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
-    skos:definition "Document dat een rol speelt op of ten behoeve van een vergadering."@nl;
-    skos:prefLabel "Vergaderstuk"@nl .
+# vergaderstuktype:vergaderstuk a skos:Concept; # meest algemene/breed concept; wordt nog niks mee gedaan
+#     # skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
+#     skos:definition "Document dat een rol speelt op of ten behoeve van een vergadering."@nl;
+#     skos:prefLabel "Vergaderstuk"@nl .
     
 vergaderstuktype:voorstel a skos:Concept ;
     skos:topConceptOf <https://ori-a.nl/begrippenlijsten#vergaderstuktypes> ;
