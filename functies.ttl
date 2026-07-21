@@ -98,6 +98,12 @@ functie:commissielidBurgelid a skos:Concept ;
     skos:definition "Een niet-verkozen lid van een commissie of werkgroep."@nl ;
     skos:broader functie:commissielid .
 
+functie:commissielidVoorzitter a skos:Concept ;
+    skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
+    skos:prefLabel "Commissievoorzitter"@nl ;
+    skos:definition "Voorzitter van een commissie of werkgroep."@nl ;
+    skos:broader functie:commissielid .
+
 functie:ambtenaar a skos:Concept ;
     skos:topConceptOf <https://ori-a.nl/begrippenlijsten#functies> ;
     skos:prefLabel "Ambtenaar of medewerker"@nl ;
