@@ -5,7 +5,7 @@
 
 <https://ori-a.nl/begrippenlijsten#deelnemerrollen> a skos:ConceptScheme ;
     dcterms:title "Deelnemerrollen"@nl ;
-    dcterms:description "Rollen waarin een deelnemer in een vergadering aanwezig in kan zijn."@nl ;
+    dcterms:description "Rollen waarin een deelnemer in een vergadering aanwezig kan zijn."@nl ;
     skos:hasTopConcept rol:voorzitter, rol:viceVoorzitter, rol:portefeuillehouder, rol:griffier,
         rol:statenlid, rol:kamerlid, rol:dagelijksBestuurslid, rol:algemeenBestuurslid,
         rol:inspreker, rol:overig .
