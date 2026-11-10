@@ -4,7 +4,7 @@
 
 <https://ori-a.nl/begrippenlijsten#dagelijks-bestuur-types> a skos:ConceptScheme ;
     dcterms:title "Dagelijks bestuur types"@nl ;
-    dcterms:description "Rollen waarin in een deelnemer aan een vergadering aanwezig in kan zijn."@nl ;
+    dcterms:description "Soorten dagelijks bestuur."@nl ;
     skos:hasTopConcept dagelijksbestuurtype:collegeVanDijkgraafEnHeemraden,
         dagelijksbestuurtype:collegeVanGedeputeerdeStaten,
         dagelijksbestuurtype:collegeVanBurgemeesterEnWethouders,
