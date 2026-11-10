@@ -4,7 +4,7 @@
 
 <https://ori-a.nl/begrippenlijsten#betrokkene-vergaderstuk-relaties> a skos:ConceptScheme ;
     dcterms:title "Betrokkene-vergaderstuk relaties"@nl ;
-    dcterms:description "Relaties tussen een bij een vergadering betrokken persoon en een vergaderstuk."@nl ;
+    dcterms:description "Relaties tussen een persoon en een vergaderstuk."@nl ;
     skos:hasTopConcept relatie:indiener, relatie:ondertekenaar, relatie:portefeuillehouder .
 
 relatie:indiener a skos:Concept ;
